@@ -1,0 +1,1197 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.1. Nested Loops · Programming Basics with Python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter-06-nested-loops-exam-problems.html" />
+    
+    
+    <link rel="prev" href="chapter-05-loops-exam-problems.html" />
+    
+
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Book "Programming Basics" with Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter-00-preface.html">
+            
+                <a href="chapter-00-preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter-01-first-steps-in-programming.html">
+            
+                <a href="chapter-01-first-steps-in-programming.html">
+            
+                    
+                    1. First Steps in Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter-02-simple-calculations.html">
+            
+                <a href="chapter-02-simple-calculations.html">
+            
+                    
+                    2.1. Simple Calculations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter-02-simple-calculations-exam-problems.html">
+            
+                <a href="chapter-02-simple-calculations-exam-problems.html">
+            
+                    
+                    2.2. Simple Calculations – Exam Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter-03-simple-conditions.html">
+            
+                <a href="chapter-03-simple-conditions.html">
+            
+                    
+                    3.1. Simple Conditions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter-03-simple-conditions-exam-problems.html">
+            
+                <a href="chapter-03-simple-conditions-exam-problems.html">
+            
+                    
+                    3.2. Simple Conditions – Exam Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter-04-complex-conditions.html">
+            
+                <a href="chapter-04-complex-conditions.html">
+            
+                    
+                    4.1. More Complex Conditions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter-04-complex-conditions-exam-problems.html">
+            
+                <a href="chapter-04-complex-conditions-exam-problems.html">
+            
+                    
+                    4.2. More Complex Conditions – Exam Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter-05-loops.html">
+            
+                <a href="chapter-05-loops.html">
+            
+                    
+                    5.1. Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter-05-loops-exam-problems.html">
+            
+                <a href="chapter-05-loops-exam-problems.html">
+            
+                    
+                    5.2. Loops – Exam Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="chapter-06-nested-loops.html">
+            
+                <a href="chapter-06-nested-loops.html">
+            
+                    
+                    6.1. Nested Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter-06-nested-loops-exam-problems.html">
+            
+                <a href="chapter-06-nested-loops-exam-problems.html">
+            
+                    
+                    6.2. Nested Loops – Exam Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter-07-complex-loops.html">
+            
+                <a href="chapter-07-complex-loops.html">
+            
+                    
+                    7.1. More Complex Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="chapter-07-complex-loops-exam-problems.html">
+            
+                <a href="chapter-07-complex-loops-exam-problems.html">
+            
+                    
+                    7.2. More Complex Loops – Exam Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="chapter-08-exam-preparation.html">
+            
+                <a href="chapter-08-exam-preparation.html">
+            
+                    
+                    8.1. Practical Exam Preparation – Part I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="chapter-08-exam-preparation-part-2.html">
+            
+                <a href="chapter-08-exam-preparation-part-2.html">
+            
+                    
+                    8.2. Practical Exam Preparation – Part II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="chapter-09-problems-for-champions.html">
+            
+                <a href="chapter-09-problems-for-champions.html">
+            
+                    
+                    9.1. Problems for Champions – Part I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="chapter-09-problems-for-champions-part-2.html">
+            
+                <a href="chapter-09-problems-for-champions-part-2.html">
+            
+                    
+                    9.2. Problems for Champions – Part II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="chapter-10-functions.html">
+            
+                <a href="chapter-10-functions.html">
+            
+                    
+                    10. Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="chapter-11-tricks-and-hacks.html">
+            
+                <a href="chapter-11-tricks-and-hacks.html">
+            
+                    
+                    11. Tricks and Hacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="chapter-12-conclusion.html">
+            
+                <a href="chapter-12-conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://softuni.org">
+            
+                    
+                    🎓 SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://softuni.org/learn">
+            
+                    
+                    👨🏼‍💻 Learn Programming @ SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <a target="_blank" href="https://www.youtube.com/c/CodeWithNakov">
+            
+                    
+                    ▶️ SoftUni Global @ YouTube
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <a target="_blank" href="https://introprogramming.info">
+            
+                    
+                    📚 Nakov's Books
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >6.1. Nested Loops</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-61-nested-loops"><a name="chapter-61-nested-loops" class="plugin-anchor" href="#chapter-61-nested-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 6.1. Nested Loops</h1>
+<p>In the current chapter, we will be looking at <strong>nested loops</strong> and how to use <code>for</code> loops to <strong>draw</strong> various <strong>figures on the console</strong>, that contain symbols and signs, ordered in rows and columns on the console. We will use <strong>single</strong> and <strong>nested loops</strong> (loops that stay in other loops), <strong>calculations</strong>, and <strong>checks</strong>, to print on the console simple and not so simple figures by specified sizes.</p>
+<h3 id="problem-rectangle-of-10-x-10-stars"><a name="problem-rectangle-of-10-x-10-stars" class="plugin-anchor" href="#problem-rectangle-of-10-x-10-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle of 10 x 10 Stars</h3>
+<p>Print on the console a rectangle made out of <strong>10 x 10</strong> asterisks.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(None)</td>
+<td><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code><br><code>**********</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p><img src="assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png" alt=""></p>
+<p>How does the example work? We initialize <strong>a loop with a variable <code>i</code></strong>. The default value of the variable is <strong><code>i = 0</code></strong>. With each iteration of the loop, the variable increases by <strong>1</strong> while it is <strong>less than 10</strong>. This way the code in the body of the loop is executed <strong>10 times</strong> - from <strong>0</strong> to <strong>9</strong> included. In the body of the loop, we print a new line on the console <strong><code>&apos;*&apos; * 10</code></strong>, which creates a string of 10 asterisks.</p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#0</a>.</p>
+<h3 id="problem-rectangle-of-n-x-n-stars"><a name="problem-rectangle-of-n-x-n-stars" class="plugin-anchor" href="#problem-rectangle-of-n-x-n-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle of N x N Stars</h3>
+<p>Write a program that receives a positive number <strong>n</strong> and prints on the console <strong>a rectangle made out of N x N asterisks</strong>. </p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td><code>**</code><br><code>**</code></td>
+<td>3</td>
+<td><code>***</code><br><code>***</code><br><code>***</code></td>
+<td>4</td>
+<td><code>****</code><br><code>****</code><br><code>****</code><br><code>****</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>The task is similar to the previous one: </p>
+<p><img src="assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png" alt=""></p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#1</a>.</p>
+<h2 id="nested-loops"><a name="nested-loops" class="plugin-anchor" href="#nested-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Loops</h2>
+<p>A <strong>nested loop</strong> is a construction where <strong>the body of one loop</strong> (the outer one) <strong>stays inside another loop</strong> (the inner one). In each iteration of the outer loop, <strong>the whole</strong> inner loop is executed. This happens in the following way:</p>
+<ul>
+<li>When nested loops start executing, <strong>the outer loop starts</strong> first: <strong>initialization</strong> of its control variable is performed and after checking for the end of the loop, the code in its body is executed.</li>
+<li>After that, <strong>the inner loop is executed</strong>. The control variable&apos;s start position is initialized, a check for the end of the loop is made and the code in its body is executed.</li>
+<li>When the set value for the <strong>end of the loop</strong> is reached, the program goes back one step up and continues executing the previous outer loop. The control variable of the outer loop changes with one step, a check is made to see if the condition for the end of the loop is met and <strong>a new execution of the nested (inner) loop is started</strong>.</li>
+<li>This is repeated until the variable of the outer loop meets the condition to <strong>end the loop</strong>.</li>
+</ul>
+<p>Here is an <strong>example</strong> that illustrates nested loops. The aim is again to print a rectangle made of <strong>N x N asterisk</strong>, in which for each row a loop iterates from <strong>1</strong> to <strong>N</strong>, and for each column a nested loop is executed from <strong>1</strong> to <strong>N</strong>:</p>
+<p><img src="assets/chapter-6-1-images/00.Nested-loops-01.png" alt=""></p>
+<p>In <strong>Python</strong>, when the standard initial value of the variable in the loop (<strong><code>i = 0</code></strong>) does not work for us, we can change it with the above syntax. I.e. when we want the loop to start from <strong>1</strong> and rotate to <strong><code>n</code></strong> inclusive, we write: <strong><code>for i in range (1, n + 1)</code></strong>. The first value in parentheses indicates the beginning of the loop, and the second - the end of the loop, but not including, i.e. the loop ends before it is reached. </p>
+<p>Let&apos;s look at the example above. After the initialization of the <strong>first (outer) loop</strong>, its <strong>body</strong>, which contains <strong>the second (nested) loop</strong>, starts to run. It prints one line <strong><code>n</code></strong> of asterisks. After the <strong>internal</strong> loop <strong>completes</strong> its execution in the first iteration of the external one, then <strong>the external one will continue</strong>, i.e. will print a blank line on the console. <strong>Then</strong> the <strong>first</strong> loop <strong> will be </strong>updated<strong> and the whole </strong>second<strong> (nested) loop will be executed again. The inner loop will be executed as many times as the body of the outer loop is executed, in this case, </strong><code>n</code>** times. </p>
+<h3 id="problem-square-of-stars"><a name="problem-square-of-stars" class="plugin-anchor" href="#problem-square-of-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Square of Stars</h3>
+<p>Print on the console a square made of <strong>N x N</strong> asterisks:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td><code>* *</code><br><code>* *</code></td>
+<td>3</td>
+<td><code>* * *</code><br><code>* * *</code><br><code>* * *</code></td>
+<td>4</td>
+<td><code>* * * *</code><br><code>* * * *</code><br><code>* * * *</code><br><code>* * * *</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the asterisks so that there aren&apos;t any excess white spaces at the beginning and the end:</p>
+<p><img src="assets/chapter-6-1-images/03.Square-01.png" alt=""></p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#2</a>.</p>
+<h3 id="problem-triangle-of-dollars"><a name="problem-triangle-of-dollars" class="plugin-anchor" href="#problem-triangle-of-dollars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Triangle of Dollars</h3>
+<p>Write a program that receives an integer <strong>n</strong> and prints <strong>a triangle made of dollars</strong> of size <strong>n</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><code>$</code><br><code>$ $</code><br><code>$ $ $</code></td>
+<td>4</td>
+<td><code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code></td>
+<td>5</td>
+<td><code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code><br><code>$ $ $ $ $</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>The problem is <strong>similar</strong> to those for drawing <strong>a rectangle</strong> and <strong>square</strong>. Once again, we will use <strong>nested loops</strong>, but there is <strong>a catch</strong> here. The difference is that <strong>the number of columns</strong> that we need to print depends on <strong>the row</strong>, on which we are and not on the input number <strong><code>n</code></strong>. From the example input and output data, we see that <strong>the count of dollars depends</strong> on which <strong>row</strong> we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let&apos;s see the following example in detail. We see that <strong>the variable</strong> of <strong>the nested</strong> loop is connected with the variable of <strong>the outer</strong> one. This way our program prints the desired triangle:</p>
+<p><img src="assets/chapter-6-1-images/04.Triangle-of-dollars-01.png" alt=""></p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#3</a>.</p>
+<h3 id="problem-square-frame"><a name="problem-square-frame" class="plugin-anchor" href="#problem-square-frame"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Square Frame</h3>
+<p>Write a program that receives a positive integer <strong>n</strong> and draws on the console <strong>a square frame</strong> with a size of <strong>N x N</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><code>+ - +</code><br><code>| - |</code><br><code>+ - +</code></td>
+<td>4</td>
+<td><code>+ - - +</code><br><code>| - - |</code><br><code>| - - |</code><br><code>+ - - +</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><code>+ - - - +</code><br><code>| - - - |</code><br><code>| - - - |</code><br><code>| - - - |</code><br><code>+ - - - +</code></td>
+<td>6</td>
+<td><code>+ - - - - +</code><br><code>| - - - - |</code><br><code>| - - - - |</code><br><code>| - - - - |</code><br><code>| - - - - |</code><br><code>+ - - - - +</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>We can solve the problem in the following way:</p>
+<ul>
+<li>We read from the console the number <strong><code>n</code></strong>.</li>
+<li>We print <strong>the upper part</strong>: first a <strong><code>+</code></strong> sign, then <strong>n-2</strong> times <strong><code>-</code></strong> and in the end a <strong><code>+</code></strong> sign.</li>
+<li>We print <strong>the middle part</strong>: we print <strong>n-2</strong> rows, as we first print a <strong><code>|</code></strong> sign, then <strong>n-2</strong> times <strong><code>-</code></strong> and in the end again a <strong><code>|</code></strong> sign. We can do this with nested loops.</li>
+<li>We print <strong>the lower part</strong>: first a <strong><code>+</code></strong> sign, then <strong>n-2</strong> times <strong><code>-</code></strong> and in the end a <strong><code>+</code></strong> sign.</li>
+</ul>
+<p>Here is an example implementation of the above idea with nested loops:</p>
+<p><img src="assets/chapter-6-1-images/05.Square-frame-01.png" alt=""></p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#4</a>.</p>
+<h3 id="problem-rhombus-of-stars"><a name="problem-rhombus-of-stars" class="plugin-anchor" href="#problem-rhombus-of-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rhombus of Stars</h3>
+<p>Write a program that receives a positive integer <strong>n</strong> and prints <strong>a rhombus made of asterisks</strong> with size <strong>N</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>*</code></td>
+<td>2</td>
+<td><code>&#xA0;*&#xA0;</code><br><code>*&#xA0;*</code><br><code>&#xA0;*&#xA0;</code><br></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><code>&#xA0;&#xA0;*&#xA0;&#xA0;</code><br><code>&#xA0;*&#xA0;*&#xA0;</code><br><code>*&#xA0;*&#xA0;*</code><br><code>&#xA0;*&#xA0;*&#xA0;</code><br><code>&#xA0;&#xA0;*&#xA0;&#xA0;</code></td>
+<td>4</td>
+<td><code>&#xA0;&#xA0;&#xA0;*&#xA0;&#xA0;&#xA0;</code><br><code>&#xA0;&#xA0;*&#xA0;*&#xA0;&#xA0;</code><br><code>&#xA0;*&#xA0;*&#xA0;*&#xA0;</code><br><code>*&#xA0;*&#xA0;*&#xA0;*</code><br><code>&#xA0;*&#xA0;*&#xA0;*&#xA0;</code><br><code>&#xA0;&#xA0;*&#xA0;*&#xA0;&#xA0;</code><br><code>&#xA0;&#xA0;&#xA0;*&#xA0;&#xA0;&#xA0;</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>To solve this problem, we need to mentally <strong>divide</strong> <strong>the rhombus</strong> into <strong>two parts</strong> &#x2013; the <strong>upper</strong> one, which <strong>also</strong> includes the middle row, and the <strong>lower</strong> one. For <strong>the printing</strong> of each part, we will use <strong>two</strong> separate loops, as we leave the reader to decide the dependency between <strong><code>n</code></strong> and the variables of the loops. For the first loop we can use the following guidelines:</p>
+<ul>
+<li>We print <strong><code>n-row</code></strong> whitespaces.</li>
+<li>We print <strong><code>*</code></strong>.</li>
+<li>We print <strong><code>row-1</code></strong> times <strong><code>*</code></strong>.</li>
+</ul>
+<p><strong>The second</strong> (lower) part will be printed <strong>similarly</strong>, which again we leave to the reader to do.</p>
+<p><img src="assets/chapter-6-1-images/06.Rhombus-of-stars-01.png" alt=""></p>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code>for i in range (0, 100, 2)</code>. The third parameter, in this case, shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
+</tr></table>
+
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#5</a>.</p>
+<h3 id="problem-christmas-tree"><a name="problem-christmas-tree" class="plugin-anchor" href="#problem-christmas-tree"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Christmas Tree</h3>
+<p>Write a program that receives a number <strong>n</strong> (1 &#x2264; n &#x2264; 100) and prints a Christmas tree with a height of <strong>N + 1</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>&#xA0;&#xA0;|&#xA0;&#xA0;</code><br><code>*&#xA0;|&#xA0;*</code></td>
+<td>2</td>
+<td><code>&#xA0;&#xA0;&#xA0;|&#xA0;&#xA0;&#xA0;</code><br><code>&#xA0;*&#xA0;|&#xA0;*&#xA0;</code><br><code>**&#xA0;|&#xA0;**</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><code>&#xA0;&#xA0;&#xA0;&#xA0;|&#xA0;&#xA0;&#xA0;&#xA0;</code><br><code>&#xA0;&#xA0;*&#xA0;|&#xA0;*&#xA0;&#xA0;</code><br><code>&#xA0;**&#xA0;|&#xA0;**&#xA0;</code><br><code>***&#xA0;|&#xA0;***</code></td>
+<td>4</td>
+<td><code>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;|&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</code><br><code>&#xA0;&#xA0;&#xA0;*&#xA0;|&#xA0;*&#xA0;&#xA0;&#xA0;</code><br><code>&#xA0;&#xA0;**&#xA0;|&#xA0;**&#xA0;&#xA0;</code><br><code>&#xA0;***&#xA0;|&#xA0;***&#xA0;</code><br><code>****&#xA0;|&#xA0;****</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>From the examples, we see that <strong>the Christmas tree</strong> can be <strong>divided</strong> into <strong>three</strong> logical parts. <strong>The first</strong> part is <strong>the asterisks and the whitespaces before and after them</strong>, <strong>the middle</strong> part is <strong><code>|</code></strong>, and <strong>the last</strong> part is again <strong>asterisks</strong>, but this time there are <strong>whitespaces</strong> only <strong>before</strong> them. The printing can be done with only <strong>one loop</strong> and the operation <strong>string multiplication</strong>, which we will use once for the asterisks and once for the whitespaces:</p>
+<p><img src="assets/chapter-6-1-images/07.Christmas-tree-01.png" alt=""></p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#6</a>.</p>
+<h2 id="drawing-more-complex-figures"><a name="drawing-more-complex-figures" class="plugin-anchor" href="#drawing-more-complex-figures"><i class="fa fa-link" aria-hidden="true"></i></a>Drawing More Complex Figures</h2>
+<p>Let&apos;s look at how to <strong>draw figures</strong> using <strong>nested loops</strong> with more complex logic, for which we need to think more before coding.</p>
+<h3 id="problem-sunglasses"><a name="problem-sunglasses" class="plugin-anchor" href="#problem-sunglasses"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sunglasses</h3>
+<p>Write a program that receives an integer <strong>n</strong> (3 &#x2264; n &#x2264; 100) and prints sunglasses with a size of <strong>5*N x N</strong> as found in the examples:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><code>******&#xA0;&#xA0;&#xA0;******</code><br><code>*////*|||*////*</code><br><code>******&#xA0;&#xA0;&#xA0;******</code></td>
+<td>4</td>
+<td><code>********&#xA0;&#xA0;&#xA0;&#xA0;********</code><br><code>*//////*||||*//////*</code><br><code>*//////*&#xA0;&#xA0;&#xA0;&#xA0;*//////*</code><br><code>********&#xA0;&#xA0;&#xA0;&#xA0;********</code><br></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><code>**********&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;**********</code><br><code>*////////*&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;*////////*</code><br><code>*////////*|||||*////////*</code><br><code>*////////*&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;*////////*</code><br><code>**********&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;**********</code><br></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>From the examples, we can see that the sunglasses can be divided into <strong>three parts</strong> &#x2013; upper, middle, and lower. Below is part of the code with which the problem can be solved. When drawing the upper and lower rows we need to print <strong><code>2 * n</code></strong> asterisks, <strong><code>n</code></strong> whitespaces, and <strong><code>2 * n</code></strong> asterisks:</p>
+<p><img src="assets/chapter-6-1-images/08.Sunglasses-01.png" alt=""></p>
+<p>When drawing <strong>the middle</strong> part, we need to <strong>check</strong> if the row is <strong><code>(n-1) / 2 - 1</code></strong> because in the examples we can see that in <strong>this row</strong> we need to print <strong>vertical slashes</strong> instead of whitespaces:</p>
+<p><img src="assets/chapter-6-1-images/08.Sunglasses-02.png" alt=""></p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#7</a>.</p>
+<h3 id="problem-house"><a name="problem-house" class="plugin-anchor" href="#problem-house"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: House</h3>
+<p>Write a program that receives a number <strong>n</strong> (2 &#x2264; <strong>n</strong> &#x2264; 100) and prints <strong>a house</strong> with size <strong>N x N</strong>, just as in the examples:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td><code>**</code><br><code>||</code><br></td>
+<td>3</td>
+<td><code>-*-</code><br><code>***</code><br><code>|*|</code></td>
+<td>4</td>
+<td><code>-**-</code><br><code>****</code><br><code>|**|</code><br><code>|**|</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><code>--*--</code><br><code>-***-</code><br><code>*****</code><br><code>|***|</code><br><code>|***|</code></td>
+<td>8</td>
+<td><code>---**---</code><br><code>--****--</code><br><code>-******-</code><br><code>********</code><br><code>|******|</code><br><code>|******|</code><br><code>|******|</code><br><code>|******|</code><br></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>We understand from the description of the problem that the house is with a size of <strong><code>n</code> x <code>n</code></strong>. What we see from the example input and output is that:</p>
+<ul>
+<li>The house is divided into two parts: <strong>roof and base</strong>.</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/09.House-01.png" alt=""></p>
+<ul>
+<li>When <strong><code>n</code></strong> is an even number, the point of the house is &quot;dull&quot;.</li>
+<li>When <strong><code>n</code></strong> is odd, <strong>the roof</strong> has a sharp point and is one row larger than the <strong>base</strong>.</li>
+</ul>
+<h5 id="the-roof"><a name="the-roof" class="plugin-anchor" href="#the-roof"><i class="fa fa-link" aria-hidden="true"></i></a>The Roof</h5>
+<ul>
+<li>It comprises <strong>asterisks</strong> and <strong>dashes</strong>.</li>
+<li>At its highest part, there are one or two asterisks, depending on whether <strong>n</strong> is even or odd, as well as dashes. </li>
+<li>At its lowest part, there are many asterisks and little to no dashes.</li>
+<li>With each lower row, <strong>the asterisks</strong> increase by 2, and <strong>the dashes</strong> decrease also by 2.</li>
+</ul>
+<h5 id="the-base"><a name="the-base" class="plugin-anchor" href="#the-base"><i class="fa fa-link" aria-hidden="true"></i></a>The Base</h5>
+<ul>
+<li>The height is <strong><code>n</code></strong> rows.</li>
+<li>It is made out of <strong>asterisks</strong> and <strong>vertical slashes</strong>.</li>
+<li>Each row comprises 2 <strong>vertical slashes</strong> &#x2013; one in the beginning and one at the end of the row, and also <strong>asterisks</strong> between the vertical slashes with a string length of <strong><code>n - 2</code></strong>.    </li>
+</ul>
+<p>We read the input number <strong><code>n</code></strong> from the console and write its value in a variable: </p>
+<p><img src="assets/chapter-6-1-images/09.House-02.png" alt=""></p>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into type <b><code>int</code></b>, because it is said that we will be given valid integers. If you are making more complex programs, it is a good practice to check the data. What will happen if instead of a number the user inputs the character &quot;A&quot;?</td>
+</tr></table>
+
+<p>To draw <strong>the roof</strong>, we write down how many <strong>asterisks</strong> we start with a variable called <strong><code>stars</code></strong>:</p>
+<ul>
+<li>If <strong><code>n</code></strong> is an <strong>odd</strong> number, there will be 1 star.</li>
+<li>If it is <strong>even</strong>, there will be 2.</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/09.House-03.png" alt=""></p>
+<p>Calculate the length of <strong>the roof</strong>. It equals half of <strong><code>n</code></strong>. Write the result in the variable <strong><code>roof_length</code></strong>:</p>
+<p><img src="assets/chapter-6-1-images/09.House-04.png" alt=""></p>
+<p><strong>Note:</strong> To use <strong><code>math.ceil ()</code></strong>, which rounds to the larger integer, regardless of the fractional part, it is necessary to import the library <strong><code>math</code></strong>. This is done with the command <strong><code>import math</code></strong>. It is recommended to write <strong><code>import math</code></strong> (as well as all other imports) at the beginning of the file. </p>
+<p>It is important to note that when <strong><code>n</code></strong> is an odd number, the length of the roof is one row more than that of the <strong>base</strong>.</p>
+<p>In <strong>Python</strong>, when two integer types are divisible and there is a remainder, the result will be a number with a remainder. If we want to perform a pure integer division without a remainder, it is necessary to use the operator <strong><code>//</code></strong>. </p>
+<p>Example:</p>
+<pre><code class="lang-python">result1 = <span class="hljs-number">3</span> / <span class="hljs-number">2</span>    <span class="hljs-comment"># result 1.5</span>
+result2 = <span class="hljs-number">3</span> // <span class="hljs-number">2</span>   <span class="hljs-comment"># result 1</span>
+</code></pre>
+<p>If we want to round up to the next largest integer number, we need to use the method <strong><code>math.cail(&#x2026;)</code></strong>:
+<strong><code>result = math.ceil(3 / 2)</code></strong>.</p>
+<p>After we have calculated the length of the roof, we make a loop from 0 to <strong><code>roof_length</code></strong>. On each iteration we will:</p>
+<ul>
+<li>Calculate the number of <strong>dashes</strong> we need to draw. The number will be equal to <strong><code>(n - stars) / 2</code></strong>. We store it in variable <strong><code>padding</code></strong>.</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/09.House-05.png" alt=""></p>
+<ul>
+<li>We print on the console: &quot;<strong>dashes</strong>&quot; (<strong><code>padding</code></strong> times) + &quot;<strong>asterisks</strong>&quot; (<strong><code>stars</code></strong> times) + &quot;<strong>dashes</strong>&quot; (<strong><code>padding</code></strong> times):</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/09.House-06.png" alt=""></p>
+<ul>
+<li>Before the iteration is over, we add 2 to <strong><code>stars</code></strong> (the number of <strong>the asterisks</strong>).</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/09.House-07.png" alt=""></p>
+<p>After we have finished with the <strong>roof</strong>, it is time for <strong>the base</strong>. It is easier to print:</p>
+<ul>
+<li>We start with a loop from 0 to <code>n</code> (exclusive).</li>
+<li>We print on the console: <code>|</code> + <code>*</code> (<strong><code>n - 2</code></strong> times) + <code>|</code>.</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/09.House-08.png" alt=""></p>
+<p>If we have written everything correctly, our problem should be solved. </p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#8</a>.</p>
+<h3 id="problem-diamond"><a name="problem-diamond" class="plugin-anchor" href="#problem-diamond"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Diamond</h3>
+<p>Write a program that receives an integer <strong>n</strong> (1 &#x2264; <strong>n</strong> &#x2264; 100) and prints a diamond with size <strong>N</strong>, as in the following examples:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>*</code><br></td>
+<td>2</td>
+<td><code>**</code></td>
+<td>3</td>
+<td><code>-*-</code><br><code>*-*</code><br><code>-*-</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td><code>-**-</code><br><code>*--*</code><br><code>-**-</code></td>
+<td>5</td>
+<td><code>--*--</code><br><code>-*-*-</code><br><code>*---*</code><br><code>-*-*-</code><br><code>--*--</code><br></td>
+<td>6</td>
+<td><code>--**--</code><br><code>-*--*-</code><br><code>*----*</code><br><code>-*--*-</code><br><code>--**--</code><br></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td><code>---*---</code><br><code>--*-*--</code><br><code>-*---*-</code><br><code>*-----*</code><br><code>-*---*-</code><br><code>--*-*--</code><br><code>---*---</code><br></td>
+<td>8</td>
+<td><code>---**---</code><br><code>--*--*--</code><br><code>-*----*-</code><br><code>*------*</code><br><code>-*----*-</code><br><code>--*--*--</code><br><code>---**---</code><br></td>
+<td>9</td>
+<td><code>----*----</code><br><code>---*-*---</code><br><code>--*---*--</code><br><code>-*-----*-</code><br><code>*-------*</code><br><code>-*-----*-</code><br><code>--*---*--</code><br><code>---*-*---</code><br><code>----*----</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>What we know from the problem&apos;s description is that the diamond is <strong><code>n</code> x <code>n</code></strong> in size. From the example input and output we can conclude that all rows contain exactly <strong><code>n</code></strong> symbols, and all the rows, except for the top and bottom ones, have <strong>2 asterisks</strong>. We can mentally divide the diamond into 2 parts:</p>
+<ul>
+<li><strong>Upper</strong> part. It starts from the upper tip down to the middle.</li>
+<li><strong>Lower</strong> part. It starts from the row below the middle one and goes down to the lower tip (inclusive).</li>
+</ul>
+<h5 id="upper-part"><a name="upper-part" class="plugin-anchor" href="#upper-part"><i class="fa fa-link" aria-hidden="true"></i></a>Upper Part</h5>
+<ul>
+<li>If <strong>n</strong> is an <strong>odd</strong> number, it starts with <strong>1 asterisk</strong>.</li>
+<li>If <strong>n</strong> is an <strong>even</strong> number, it starts with <strong>2 asterisks</strong>.</li>
+<li>With each row down, the asterisks get further away from each other.</li>
+<li>The space between, before, and after <strong>the asterisks</strong> is filled up with <strong>dashes</strong>.</li>
+</ul>
+<h5 id="lower-part"><a name="lower-part" class="plugin-anchor" href="#lower-part"><i class="fa fa-link" aria-hidden="true"></i></a>Lower Part</h5>
+<ul>
+<li>With each row down, the asterisks get closer to each other. This means that space (<strong>the dashes</strong>) between them is getting smaller and space (<strong>the dashes</strong>) on the left and the right is getting larger.</li>
+<li>The bottom-most part has 1 or 2 <strong>asterisks</strong>, depending on whether <strong>n</strong> is an even or odd number.</li>
+</ul>
+<h5 id="upper-and-lower-parts-of-the-diamond"><a name="upper-and-lower-parts-of-the-diamond" class="plugin-anchor" href="#upper-and-lower-parts-of-the-diamond"><i class="fa fa-link" aria-hidden="true"></i></a>Upper and Lower Parts of The Diamond</h5>
+<ul>
+<li>On each row, except the middle one, the asterisks are surrounded by inner and outer <strong>dashes</strong>.</li>
+<li>On each row, there is space between the two <strong>asterisks</strong>, except on the first and the last row (sometimes <strong>the asterisk is 1</strong>).</li>
+</ul>
+<p>We read the value of <strong><code>n</code></strong> from the console, converting it to type <strong><code>int</code></strong>: </p>
+<p><img src="assets/chapter-6-1-images/10.Diamond-01.png" alt=""></p>
+<p>We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer <strong>dashes <code>left_right</code></strong> (the dashes on the outer side of <strong>the asterisks</strong>). It is equal to <strong><code>(n - 1) / 2</code></strong>, rounded down:</p>
+<p><img src="assets/chapter-6-1-images/10.Diamond-02.png" alt=""></p>
+<p>After we have calculated <strong><code>left_right</code></strong>, we start drawing <strong>the upper part</strong> of the diamond. We can start by running a <strong>loop</strong> from <strong><code>(n + 1) // 2</code></strong> (i.e. rounded down).</p>
+<p>At each iteration of the loop the following steps must be taken:</p>
+<ul>
+<li>We print on the console the left <strong>dashes</strong> (with length <strong><code>left_right</code></strong>) and right after them the first <strong>asterisk</strong>:</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/10.Diamond-03.png" alt=""></p>
+<ul>
+<li>We will calculate the distance between the two <strong>asterisks</strong>. We can do this by subtracting from <strong>n</strong> the number of the outer <strong>dashes</strong>, and the number 2 (the number of <strong>the asterisks</strong>, i.e. the diamond&apos;s outline). We need to store the result of the subtraction in a variable <strong><code>mid</code></strong>. </li>
+</ul>
+<p><img src="assets/chapter-6-1-images/10.Diamond-04.png" alt=""></p>
+<ul>
+<li><p>If the <strong><code>mid</code></strong> is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print <strong>dashes</strong> with length <strong><code>mid</code></strong> and one <strong>asterisk</strong> after them.</p>
+</li>
+<li><p>We print on the console the right outer <strong>dashes</strong> with length <strong><code>left_right</code></strong>. </p>
+</li>
+</ul>
+<p><img src="assets/chapter-6-1-images/10.Diamond-05.png" alt=""></p>
+<ul>
+<li>At the end of the loop, we decrease <strong><code>left_right</code></strong> by 1 (<strong>the asterisks</strong> are moving away from each other).</li>
+</ul>
+<p>We are ready with the upper part.</p>
+<p>Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing <strong><code>left_right</code></strong> with 1 at the end of the loop, we will increase it with 1 at the beginning of the loop. Also, <strong>the loop will iterate from 0 to <code>(n - 1) // 2</code></strong>:</p>
+<p><img src="assets/chapter-6-1-images/10.Diamond-06.png" alt=""></p>
+<p><td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let&apos;s imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) in a few more places and we decide to change it. To do this, we will have to go through all the places and change it everywhere. Now let&apos;s imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can search for more information about them on the Internet or view <a href="chapter-10-functions.html">Chapter &#x201C;10&#x201D; (Functions)</a>.</td>
+&lt;/tr&gt;&lt;/table&gt;</p>
+<p>If we have written all correctly, then the problem is solved.</p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1055#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1055#9</a>.</p>
+<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What Have We Learned from This Chapter?</h2>
+<p>We learned about one of the ways to create strings: </p>
+<pre><code class="lang-python">print_me = <span class="hljs-string">&apos;*&apos;</span> * <span class="hljs-number">5</span>
+</code></pre>
+<p>We learned how to draw figures using nested <strong><code>for</code></strong> loops:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    print(<span class="hljs-string">&apos;*&apos;</span>, end=<span class="hljs-string">&apos;&apos;</span>)
+
+    <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+        print(<span class="hljs-string">&apos; *&apos;</span>, end=<span class="hljs-string">&apos;&apos;</span>)
+
+    print()
+</code></pre>
+<h2 id="lab-drawing-figures-in-a-web-environment"><a name="lab-drawing-figures-in-a-web-environment" class="plugin-anchor" href="#lab-drawing-figures-in-a-web-environment"><i class="fa fa-link" aria-hidden="true"></i></a>Lab: Drawing Figures in a Web Environment</h2>
+<p>Now that we got used to the <strong>nested loops</strong> and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to <strong>draw in a Web environment</strong>. We will make a web application that visualizes a number rating (a number from 0 to 100) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.</p>
+<p>Don&apos;t worry if you don&apos;t understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, ask for help in the <strong>SoftUni&apos;s Reddit Community</strong>: <a href="https://www.reddit.com/r/softuni/" target="_blank">https://www.reddit.com/r/softuni/</a>.</p>
+<h3 id="problem-ratings-&#x2013;-visualization-in-a-web-environment"><a name="problem-ratings-&#x2013;-visualization-in-a-web-environment" class="plugin-anchor" href="#problem-ratings-&#x2013;-visualization-in-a-web-environment"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Ratings &#x2013; Visualization in a Web Environment</h3>
+<p>Develop a web application for rating visualization (number from 0 to 100). Draw from 1 to 10 stars (with halves). Stars to be generated with a <strong><code>for</code></strong> cycle. </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-01.png" alt=""></p>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
+<p>We start by creating a new project in <strong>PyCharm</strong> from [<strong>File</strong>] -&gt; [<strong>New Project</strong>] (or from the start window): </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-02.png" alt=""></p>
+<p>We give a meaningful name to the project, for example &quot;Ratings&quot;. We choose the type of the current <strong>Python interpreter</strong>. Let this be the default:</p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-03.png" alt=""></p>
+<p>We will again use the Flask library, which is used to create web applications. Before we can start coding, we need to install Flask. Let&apos;s recall how to do this. We go to the settings of PyCharm [<strong>File</strong>] -&gt; [<strong>Settings</strong>] -&gt; [<strong>Project: Ratings</strong>] -&gt; [<strong>Project Interpreter</strong>]. There, we press the <strong><code>+</code></strong> button: </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-04.png" alt=""></p>
+<p>Look for <strong>Flask</strong> in the window that appears and click the [<strong>Install Package</strong>] button: </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-05.png" alt=""></p>
+<p>We are now adding the <strong>structure</strong> of the project (the assignment files for this project can be downloaded from <a href="https://github.com/SoftUni/Programming-Basics-Book-Python-EN/raw/master/assets/chapter-6-1-assets/Ratings.zip" target="_blank">here</a>). Copy them from Windows Explorer and paste them in the <strong>Ratings</strong> project folder with Copy/Paste: </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-06.png" alt=""></p>
+<p>For everything to work, we need to add the code. First, we go to the file <strong>index.html</strong> (from the templates folder) and look for the <strong>TODO</strong> sections. In their place we enter the following code:
+<img src="assets/chapter-6-1-images/11.Ratings-07.png" alt=""></p>
+<p>The above code creates a web form <strong><code>&lt;form&gt;</code></strong> with one field <strong><code>&quot; rating &quot;</code></strong> for entering a number in the interval [<strong>0&#x2026; 100</strong>] and a button [<strong>Rate</strong>] to send the data from the form to the server. Then, draw with three separate <strong>for</strong> loops the corresponding number of stars - filled, half-empty and empty. </p>
+<p>The action that will process the data is called <strong><code>/DrawRatings</code></strong>, which means the function <strong><code>draw_ratings ()</code></strong> in the file <strong><code>app.py</code></strong>: </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-08.png" alt=""></p>
+<p>The code from the function <strong><code>draw_ratings ()</code></strong> takes the entered number <strong><code>rating</code></strong> from the form and passes it to the function <strong><code>calc_rating (&#x2026;)</code></strong>. The <strong><code>calc_rating (&#x2026;)</code></strong> function computes and calculates the number of <strong>full stars</strong>, the number of <strong>empty stars</strong>, and the number of <strong>halves of stars</strong>, then reload the page, but with new ones submitted values of the variables for the stars. We implement it as follows:</p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-09.png" alt=""></p>
+<p>We start the project with [<strong>Ctrl+Shift+F10</strong>] (or with [<strong>Right button</strong>] -&gt; [<strong>Run &apos;app&apos;</strong>]) and wait for it to load: </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-10.png" alt=""></p>
+<p>We go to the specified address and enjoy the finished project: </p>
+<p><img src="assets/chapter-6-1-images/11.Ratings-11.png" alt=""></p>
+<p>If you have problems with the sample project above, you can ask questions in the <strong>SoftUni&apos;s Reddit Community</strong>: <a href="https://www.reddit.com/r/softuni/" target="_blank">https://www.reddit.com/r/softuni/</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter-05-loops-exam-problems.html" class="navigation navigation-prev " aria-label="Previous page: 5.2. Loops – Exam Problems">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter-06-nested-loops-exam-problems.html" class="navigation navigation-next " aria-label="Next page: 6.2. Nested Loops – Exam Problems">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"next":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"previous":{"title":"5.2. Loops – Exam Problems","level":"1.11","depth":1,"path":"chapter-05-loops-exam-problems.md","ref":"chapter-05-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js","./assets/js/modal-popup.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops.md","mtime":"2022-11-08T17:47:11.318Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-08T17:47:59.468Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/dee59cdcdde703645cdad81663cfd1c1-repl.it-code-runner.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/44882a68460dcbe1af00b1d5913395d9-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/1dc0ac9df45f5ba5da426e71d3b1da65-top-menu.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/af1fdf2cbba480b5f86eaf4586ed92b9-modal-popup.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
